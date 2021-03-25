@@ -1,4 +1,10 @@
 /* line 1, ../sass/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../sass/main.scss */
 body {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
@@ -8,12 +14,12 @@ body {
   margin: 0;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 div, p, input, button, form, span, a, ul, li {
   box-sizing: border-box;
 }
 
-/* line 13, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -21,13 +27,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* line 19, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .conteiner {
-  width: 1070px;
+  width: 1140px;
   margin: 0 auto;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
+.title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+/* line 33, ../sass/main.scss */
+.description {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+}
+
+/* line 40, ../sass/main.scss */
 .header {
   display: flex;
   flex-direction: column;
@@ -40,14 +64,14 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 100% 100%;
   position: relative;
 }
-/* line 34, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 .header .conteiner__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
 }
-/* line 39, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 .header .conteiner__top .header__logo {
   text-decoration: none;
   font-size: 24px;
@@ -55,14 +79,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #ffffff;
 }
-/* line 46, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 .header .conteiner__top .header__menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 511px;
 }
-/* line 51, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .header .conteiner__top .header__menu .menu__links {
   text-decoration: none;
   font-size: 14px;
@@ -71,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   position: relative;
 }
-/* line 58, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .header .conteiner__top .header__menu .menu__links:after {
   content: "";
   display: none;
@@ -83,11 +107,11 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   z-index: 1;
 }
-/* line 69, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 .header .conteiner__top .header__menu .menu__links:hover:after {
   display: block;
 }
-/* line 76, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .header .conteiner__intro {
   display: flex;
   flex-direction: column;
@@ -95,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   padding-top: 264px;
 }
-/* line 82, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .header .conteiner__intro .intro__title {
   font-size: 48px;
   line-height: 24px;
@@ -103,14 +127,14 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #ffffff;
 }
-/* line 89, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .header .conteiner__intro .intro__description {
   margin-top: 30px;
   font-size: 20px;
   text-transform: none;
   color: #ffffff;
 }
-/* line 95, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .header .conteiner__intro .intro__arrow {
   cursor: pointer;
   margin-bottom: 25px;
@@ -125,13 +149,209 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
 }
-/* line 108, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .header .conteiner__intro .intro__arrow:hover {
   background: #ffffff38;
 }
-/* line 111, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .header .conteiner__intro .intro__arrow .fas {
   color: white;
   font-weight: 600;
   font-size: 33px;
+}
+
+/* line 136, ../sass/main.scss */
+.services {
+  display: block;
+  height: 470px;
+  margin-top: 100px;
+}
+/* line 140, ../sass/main.scss */
+.services .services__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 145, ../sass/main.scss */
+.services .services__conteiner .services__title {
+  position: relative;
+}
+/* line 147, ../sass/main.scss */
+.services .services__conteiner .services__title:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #555555;
+  position: absolute;
+  top: 175%;
+  left: 25%;
+  align-items: center;
+  z-index: 1;
+}
+/* line 160, ../sass/main.scss */
+.services .services__conteiner .services__all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+/* line 165, ../sass/main.scss */
+.services .services__conteiner .services__all .services__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+/* line 171, ../sass/main.scss */
+.services .services__conteiner .services__all .services__block .block__img {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #dddddd;
+  border-radius: 50%;
+}
+/* line 177, ../sass/main.scss */
+.services .services__conteiner .services__all .services__block .block__title {
+  margin-top: 29px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #555555;
+}
+/* line 185, ../sass/main.scss */
+.services .services__conteiner .services__all .services__block .block__description {
+  text-align: center;
+  margin-top: 29px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+}
+
+/* line 197, ../sass/main.scss */
+.aboutus {
+  height: 750px;
+  background-color: #f8f8f8;
+  padding-top: 100px;
+}
+/* line 201, ../sass/main.scss */
+.aboutus .aboutus__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 206, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__title {
+  position: relative;
+}
+/* line 208, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__title:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #555555;
+  position: absolute;
+  top: 175%;
+  left: 28%;
+  align-items: center;
+  z-index: 1;
+}
+/* line 221, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 70px;
+}
+/* line 227, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__text .text__decription {
+  width: 550px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #555555;
+  text-align: left;
+}
+/* line 235, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 70px;
+}
+/* line 241, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__team .team__people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 246, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__team .team__people .people__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #555555;
+  margin-top: 10px;
+}
+/* line 254, ../sass/main.scss */
+.aboutus .aboutus__conteiner .aboutus__team .team__people .people__position {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+}
+
+/* line 265, ../sass/main.scss */
+.latest-works {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 268, ../sass/main.scss */
+.latest-works .latest-works__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 273, ../sass/main.scss */
+.latest-works .latest-works__conteiner .latest-works__title {
+  position: relative;
+}
+/* line 275, ../sass/main.scss */
+.latest-works .latest-works__conteiner .latest-works__title:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #555555;
+  position: absolute;
+  top: 175%;
+  left: 36%;
+  align-items: center;
+  z-index: 1;
+}
+/* line 288, ../sass/main.scss */
+.latest-works .latest-works__conteiner .works__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 70px;
+}
+/* line 296, ../sass/main.scss */
+.latest-works .latest-works__conteiner .works__block .works__img {
+  padding: 10px;
+  width: 360px;
+  height: 320px;
 }
