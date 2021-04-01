@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   font-size: 20px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   color: #555555;
 }
@@ -380,4 +380,187 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 44px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
+}
+
+/* line 327, ../sass/main.scss */
+.blog {
+  width: 100%;
+  margin-top: 95px;
+}
+/* line 330, ../sass/main.scss */
+.blog .blog__conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 335, ../sass/main.scss */
+.blog .blog__conteiner .blog__title {
+  position: relative;
+}
+/* line 337, ../sass/main.scss */
+.blog .blog__conteiner .blog__title:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #555555;
+  position: absolute;
+  top: 175%;
+  left: 40%;
+  align-items: center;
+  z-index: 1;
+}
+/* line 350, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+/* line 356, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+/* line 360, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .post__img {
+  width: 460px;
+  height: 322px;
+  background-color: #bbbbbb;
+  margin-right: 41px;
+}
+/* line 366, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info {
+  flex-direction: column;
+}
+/* line 368, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info .block__top {
+  display: flex;
+}
+/* line 370, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info .block__top .info__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 76px;
+  height: 76px;
+  border: 2px solid #555555;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #777777;
+}
+/* line 385, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info .block__top .info__date span {
+  margin-top: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 391, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info .block__top .top__text {
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* line 397, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info .block__top .top__text .block__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #555555;
+}
+/* line 404, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info .block__top .top__text .block__description {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #777777;
+}
+/* line 414, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .post__block .block__info .block__text {
+  margin-top: 23px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #555555;
+}
+/* line 422, ../sass/main.scss */
+.blog .blog__conteiner .blog__posts .user {
+  margin-top: 80px;
+}
+
+/* line 429, ../sass/main.scss */
+.footer {
+  height: 307px;
+  background-color: #c0301c;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* line 437, ../sass/main.scss */
+.footer .footer__ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+/* line 443, ../sass/main.scss */
+.footer .footer__ico:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 175%;
+  left: 37%;
+  align-items: center;
+  z-index: 1;
+}
+/* line 455, ../sass/main.scss */
+.footer .footer__ico a {
+  text-decoration: none;
+}
+/* line 457, ../sass/main.scss */
+.footer .footer__ico a .fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #ffffff;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+  text-decoration: none;
+}
+/* line 470, ../sass/main.scss */
+.footer .footer__ico a .fab:hover {
+  background: #ffffff38;
+}
+/* line 477, ../sass/main.scss */
+.footer .footer__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 60px;
 }
